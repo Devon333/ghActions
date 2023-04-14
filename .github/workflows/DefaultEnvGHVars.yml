@@ -8,10 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: env
+
   ubuntu-environment-variables:
     runs-on: windows-latest
     steps: 
       - run: env
+
   macos-environment-variables:
     runs-on: macos-latest
     steps: 
