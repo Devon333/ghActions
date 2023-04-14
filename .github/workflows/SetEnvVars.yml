@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set the value
-      id: step_one
+      id: stepOne
       run: |
         echo "action_state=yellow" >> $GITHUB_ENV
 
     - name: Use the Value
-      id: step_two
+      id: stepTwo
       run: |
         echo "${{ env.action_state }}" # This will output 'yellow'
