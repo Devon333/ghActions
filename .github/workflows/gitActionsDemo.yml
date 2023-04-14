@@ -41,8 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Building api
-        run: echo "Building api"
+      - name: Building db
+        run: echo "Building db"
 
   build-api-app:
     needs: build-db
