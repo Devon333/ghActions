@@ -1,2 +1,2 @@
 # ghActions
-learning with github actions
+learning about github actions
