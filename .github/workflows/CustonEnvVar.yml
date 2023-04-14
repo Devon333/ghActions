@@ -19,10 +19,10 @@ jobs:
     steps:
     - name: print-values-of-env-vars
       run: |
-        echo: "$Greeting $First_NAME. Today is $DAY_OF_WEEK!"
-        echo: "testvar $testvar"
-        echo: "testvar ${{ env.testvar }}"
+        echo "$Greeting $First_NAME. Today is $DAY_OF_WEEK!"
+        echo "testvar $testvar"
+        echo "testvar ${{ env.testvar }}"
       env:
-          First_Name: Student
-          testvar: value-3
+        First_Name: Student
+        testvar: value-3
 
