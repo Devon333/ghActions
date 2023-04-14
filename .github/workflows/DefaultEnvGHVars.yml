@@ -9,7 +9,7 @@ jobs:
     steps: 
       - run: env
 
-  ubuntu-environment-variables:
+  windows-environment-variables:
     runs-on: windows-latest
     steps: 
       - run: env
