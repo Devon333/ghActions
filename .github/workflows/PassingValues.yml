@@ -14,14 +14,14 @@ jobs:
       id: var_source_step
       run: |
         echo "Perfroming random task"
-        echo "var1_name=TechSckool" >> GITHUB_OUTPUT
-        echo "var2_date=$(date +'%Y-%m-%d-%H-%M')" >> GITHUB_OUTPUT
+        echo "var1_name=TechSckool" >> $GITHUB_OUTPUT
+        echo "var2_date=$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_OUTPUT
 
     - name: Get-Variable-Value
       run: | 
         echo "Printing the Value"
         echo variableName: ${{ env.variableName }} 
-        echo Outputs: ${{ outputs }}
+        echo Outputs: ${{ steps }}
         echo var1_name: ${{ steps.var_source_step.outputs.var1_name }} 
         echo var2_name: ${{ steps.var_source_step.outputs.var2_date }}
 
